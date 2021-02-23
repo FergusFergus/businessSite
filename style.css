@@ -1,0 +1,131 @@
+@font-face { font-family: MontserratAlternates-Regular; src: url('MontserratAlternates-Regular.tff'); }
+@font-face { font-family: Comfortaa; src: url('Comfortaa-VariableFont_wght.tff'); }
+
+body {
+	margin: 0;
+	background-color: #faf6eb;
+	font-family: Comfortaa
+}
+
+
+/************************* Top navigation bar ******************************/
+header {
+	background-color: #ffffff
+}
+
+header::after {
+	content: '';
+	display: table;
+	clear: both
+}
+
+.topnav {
+	width: 95%;
+	margin: 0 auto;
+}
+
+.logo {
+	float: left;
+	width: 400px
+}
+
+nav {
+	float: right;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none
+}
+
+nav ul li {
+	display: inline-block;
+	margin-left: 50px;
+	padding-top: 35px;
+	padding-bottom: 15px;
+}
+
+nav ul li a {
+	color: #eeba60;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+nav ul li a:hover {
+	color: #d48b0c
+}
+
+
+/* for mobile screens */
+@media only screen and (max-width: 900px) {
+	.logo {
+		width: 70%;
+		padding-left: 15%;
+	}
+
+	nav {
+		float: none;
+		margin: auto;
+		padding-left: 12%;
+	}
+
+	nav ul li {
+		margin-left: 12%;
+		padding-top: 2%;
+		font-size: 2.25vw
+	}
+}
+
+/************************** Center of page **********************************/
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.background {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.sticker {
+  position: absolute;
+  top: 25%;
+  left: 32%;
+  width: 35%
+}
+
+/* Shop now button on home page */
+.parent a {
+  position: absolute;
+  top: 50%;
+  left: 45.5%;
+
+  color: #eeba60;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.25vw;
+}
+
+.parent a:hover {
+	color: #d48b0c
+}
+
+
+
+/* for mobile screens */
+@media only screen and (max-width: 900px) {
+	.sticker {
+		width: 62%;
+		left: 18%
+	}
+
+	.parent a {
+		top: 70%;
+		left: 42%;
+		font-size: 2.25vw;
+	}
+}
